@@ -30,7 +30,7 @@ export default function ActionItems(): JSX.Element {
     <>
       {carePlanBundle.entry && carePlanBundle.entry?.length > 0 ? (
         <>
-          <PageTitle title="Items" />
+          <PageTitle title="Elementos" />
           <div className="overflow-hidden border bg-white sm:rounded-md">
             <ul role="list" className="divide-y divide-gray-200">
               {carePlanBundle.entry.map(({ resource }) => {
@@ -83,7 +83,7 @@ export default function ActionItems(): JSX.Element {
           </div>
         </>
       ) : (
-        <NoData title="Detalle" />
+        <NoData title="action items" />
       )}
     </>
   );
