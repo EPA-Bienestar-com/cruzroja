@@ -15,8 +15,8 @@ export default function ActionItem(): JSX.Element {
 
   return (
     <>
-      <LinkToPreviousPage url="/care-plan/action-items" label="All Action Items" styles="mb-5" />
-      <InfoSection title="Details">
+      <LinkToPreviousPage url="/care-plan/action-items" label="Todos los elementos" styles="mb-5" />
+      <InfoSection title="Detalles">
         <div className="px-4 py-5 sm:px-6">
           <div className="flex items-center space-x-3 border-b border-gray-200 pb-5">
             <div className="flex-shrink-0">
@@ -30,7 +30,7 @@ export default function ActionItem(): JSX.Element {
               </div>
               {resource.period?.end && (
                 <div className="mt-1 text-sm font-bold text-gray-900">
-                  <p>Logrado por {getLocaleDate(resource.period.end)}</p>
+                  <p>Esperado para el {getLocaleDate(resource.period.end)}</p>
                 </div>
               )}
             </div>
