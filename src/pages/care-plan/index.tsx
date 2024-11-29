@@ -6,8 +6,8 @@ const ActionItems = lazy(() => import('./ActionItems'));
 const ActionItem = lazy(() => import('./ActionItem'));
 
 export const sideMenu = {
-  title: 'Plan',
-  menu: [{ name: 'Acciones', href: '/care-plan/action-items' }],
+  title: 'Plan de Atención',
+  menu: [{ name: 'Acción', href: '/care-plan/action-items' }],
 };
 
 export default function CarePlan(): JSX.Element {
